@@ -24,9 +24,15 @@ def division(a, b):
     b = int(b)
     return round((b / a), 9)
 
+
 def square(a):
     a = int(a)
     return a ** 2
+
+
+def squareroot(a):
+    a = int(a)
+    return squareroot(a)
 
 
 def mean(data):
@@ -58,6 +64,10 @@ class Calculator:
 
     def square(self, a):
         self.result = square(a)
+        return self.result
+
+    def squareroot(self, a):
+        self.result = squareroot(a)
         return self.result
 
 
