@@ -1,4 +1,5 @@
 from CsvReader import CsvReader
+import math
 
 
 def addition(a, b):
@@ -32,7 +33,7 @@ def square(a):
 
 def squareroot(a):
     a = int(a)
-    return squareroot(a)
+    return round(a ** (1/2), 9)
 
 
 def mean(data):
