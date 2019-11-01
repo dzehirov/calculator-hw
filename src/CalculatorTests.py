@@ -11,6 +11,23 @@ class MyTestCase(unittest.TestCase):
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.calculator, Calculator)
 
+    def test_square(self):
+        test_data = CsvReader('/src/square.csv').data
+        for row in test_data:
+            self.assertEqual(self.calculator.square(row['Value 1']), int(row['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
+
+    def test_results_property(self):
+        self.assertEqual(self.calculator.result, 0)
+
+
+class MyTestCase(unittest.TestCase):
+    def setUp(self) -> None:
+        self.calculator = Calculator()
+
+    def test_instantiate_calculator(self):
+        self.assertIsInstance(self.calculator, Calculator)
+
     def test_division(self):
         test_data = CsvReader('/src/division.csv').data
         for row in test_data:
