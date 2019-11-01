@@ -19,6 +19,12 @@ def multiplication(a, b):
     return b * a
 
 
+def division(a, b):
+    a = int(a)
+    b = int(b)
+    return round((b / a), 9)
+
+
 def mean(data):
     mean = data
     return mean
@@ -40,6 +46,10 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result
 
 
