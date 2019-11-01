@@ -10,6 +10,7 @@ def subtraction(a, b):
     b = int(b)
     return b - a
 
+
 def mean(data):
     mean = data
     return mean

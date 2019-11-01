@@ -20,10 +20,6 @@ class MyTestCase(unittest.TestCase):
     def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)
 
-    def test_add_method_calcualtor(self):
-        self.assertEqual(self.calculator.add(2, 2) , 4)
-        self.assertEqual(self.calculator.result, 4)
-
 
 if __name__ == '__main__':
     unittest.main()
