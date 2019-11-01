@@ -1,5 +1,4 @@
 from CsvReader import CsvReader
-import math
 
 
 def addition(a, b):
