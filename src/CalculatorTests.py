@@ -14,7 +14,7 @@ class MyTestCase(unittest.TestCase):
     def test_squareroot(self):
         test_data = CsvReader('/src/squareroot.csv').data
         for row in test_data:
-            self.assertEqual(self.calculator.squareroot(row['Value 1']), float(row['Result']))
+            self.assertEqual(self.calculator.squareroot(row['Value 1']),float(row['Result']))
             self.assertEqual(self.calculator.result, float(row['Result']))
 
     def test_results_property(self):

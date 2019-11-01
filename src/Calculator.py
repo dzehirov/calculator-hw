@@ -33,7 +33,7 @@ def square(a):
 
 def squareroot(a):
     a = int(a)
-    return round(a ** (1/2), 9)
+    return float('{:.10}'. format(a ** (1/2)))
 
 
 def mean(data):
